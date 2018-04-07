@@ -218,6 +218,7 @@ main(int argc, char **argv)
 					"EFL : Electronic-Gulden-Foundation : L\n"
 					"EMC : Emercoin : E\n"
 					"FAIR : Faircoin2 : f\n"
+					"FFC : FireFlyCoin : F\n"
 					"FLOZ : FLOZ : F\n"
 					"FTC : Feathercoin : 6 or 7\n"
 					"GAME : GameCredits : G\n"
@@ -294,6 +295,14 @@ main(int argc, char **argv)
 					"Generating PIVX Address\n");
 					addrtype = 30;
 					privtype = 212;
+					break;
+			}
+			else
+			if (strcmp(optarg, "FFC")== 0) {
+				fprintf(stderr,
+					"Generating FireFlyCoin Address\n");
+					addrtype = 36;
+					privtype = 224;
 					break;
 			}
 			else
